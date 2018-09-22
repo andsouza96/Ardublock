@@ -26,7 +26,7 @@
 	<BlockGenuses>
 		<BlockGenus name="dummy" kind="command" initlabel="" color="0 0 0" />
 	    <!-- ******************** NEW FOR LOOP **************** -->
-<BlockGenus name="repeat_control" kind="command" color="255 240 0" initlabel="bg.repeat_control">
+		<BlockGenus name="repeat_control" kind="command" color="255 240 0" initlabel="bg.repeat_control">
 			<description>
 				<text>repeat</text>
 				<arg-description n="1" name="variable">
@@ -11672,6 +11672,7 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+		
         <BlockGenus name="read_color" kind="data" color="18 184 255" initlabel="bg.read_color">
 			<description>
 				<text>Read the color sensor</text>
@@ -11688,6 +11689,7 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+		
         <BlockGenus name="red" kind="data" color="255 0 0" initlabel="bg.red" editable-label="no">
 			<description>
 				<text>
@@ -11749,7 +11751,7 @@
 			==========================================================================
 			==========================================================================
 			==========================================================================
-			========       ATTO BLOCKS                     =============================
+			========       ATTO BLOCKS                     ===========================
 			========   By: Dr. Daniel Girardi            =============================
 			======== More on: http:// teachduino.ufsc.br =============================
 			==========================================================================
@@ -11784,6 +11786,7 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+		
 		<BlockGenus name="print_dsp" kind="command" color="155 0 165" initlabel="bg.print_dsp">
 			<description>
 				<text>Print text</text>
@@ -11815,7 +11818,7 @@
 			</description>			
 			<BlockConnectors>
                 <BlockConnector connector-type="number" connector-kind="socket" label="bc.color">
-					<DefaultArg genus-name="number" label="0" />
+					<DefaultArg genus-name="number" label="03" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
@@ -11825,11 +11828,350 @@
 			</Images>
 		</BlockGenus>
 		
+		<BlockGenus name="atto_led_verde" kind="command" color="200 125 210" initlabel="bg.atto_led_verde">
+			<description>
+				<text> Atto LED green </text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/atto_led_vd.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_led_vermelho" kind="command" color="200 125 210" initlabel="bg.atto_led_vermelho">
+			<description>
+				<text> Atto LED red </text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_LED_Vm.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_led_amarelo" kind="command" color="200 125 210" initlabel="bg.atto_led_amarelo">
+			<description>
+				<text> Atto LED yellow </text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_LED_A.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_buzzer" kind="command" color="200 125 210" initlabel="bg.atto_buzzer">
+			
+			<description>
+				<text>Generates a square wave of the specified frequency (and 50%duty cycle) on a pin.</text>
+			</description>
+			
+		<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.frequency">
+					<DefaultArg genus-name="number" label="440" />
+				</BlockConnector>
+
+			</BlockConnectors>
+			
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Buzzer.png</FileLocation>
+				</Image>
+			</Images>
+			
+		</BlockGenus>
+		
+				<BlockGenus name="atto_LDR" kind="data" color="200 125 210" initlabel="bg.atto_LDR">
+			<description>
+				<text>Sensor LDR</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_LDR.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+				<BlockGenus name="atto_led_pwm" kind="command" color="200 125 210" initlabel="bg.atto_led_pwm">
+					<description>
+						<text>LED RGB</text>
+					</description>
+					<BlockConnectors>
+						<BlockConnector connector-type="number" connector-kind="socket" label="#pino">
+							<DefaultArg genus-name="pinListDigital_D10" label="10" />
+						</BlockConnector>
+						<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+							<DefaultArg genus-name="digital-on" label="ON" />
+						</BlockConnector>
+					</BlockConnectors>
+					<Images>
+						<Image>
+							<FileLocation>com/ardublock/block/Atto/Atto_LED_RGB.png</FileLocation>
+						</Image>
+					</Images>
+				</BlockGenus>
+
+
+        <BlockGenus name="atto_LM35" kind="data" color="200 125 210" initlabel="bg.atto_LM35">
+			<description>
+				<text>LM35</text>
+			</description>
+			<BlockConnectors>
+                <BlockConnector connector-type="number" connector-kind="plug" label="" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="#pino">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_LM35.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		
+		        <BlockGenus name="atto_seguidor_linha" kind="data" color="200 125 210" initlabel="bg.atto_seguidor_linha">
+			<description>
+				<text>proximidade </text>
+			</description>
+			<BlockConnectors>
+                <BlockConnector connector-type="number" connector-kind="plug" label="" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="#pino">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Proximidade.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_potenciometro" kind="data" color="200 125 210" initlabel="bg.atto_potenciometro">
+			<description>
+				<text>potenciometro </text>
+			</description>
+			<BlockConnectors>
+                <BlockConnector connector-type="number" connector-kind="plug" label="" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="#pino">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Pot.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+                
+
+<BlockGenus name="atto_ultrassonic" kind="data" color="200 125 210" initlabel="bg.atto_ultrassonic">
+			<description>
+				<text>Ultrasonic distance sensor</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" label="cm" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="trigger #">
+					<DefaultArg genus-name="number" label="8" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="echo #">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.ultrasonic_variable">
+					<DefaultArg genus-name="position" label="position"/>
+				</BlockConnector>
+			</BlockConnectors>
+		    <Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_ultrassonico.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="atto_push_buttonn" kind="data" color="200 125 210" initlabel="bg.atto_push_buttonn">
+			<description>
+				<text>Atto Button</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Button.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_magnetic" kind="data" color="200 125 210" initlabel="bg.atto_magnetic">
+			<description>
+				<text>Atto magnetic</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="plug" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListDigital_D13" label="013" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Magnetico.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_servo" kind="command" color="200 125 210" initlabel="bg.atto_servo">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="pinListDigital_D13" label="D13"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.angle">
+					<DefaultArg genus-name="number" label="90" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Servo.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+				<BlockGenus name="atto_motor_m1" kind="command" color="200 125 210" initlabel="bg.atto_motor_m1">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="atto_d10" label="D10"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="atto_d11" label="D11" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_movimento">
+					<DefaultArg genus-name="atto_movimento_frente" label="Frente" />
+				</BlockConnector>	
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_seconds">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_M1.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_movimento_frente" kind="data" color="255 70 50" initlabel="bg.atto_movimento_frente" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_movimento_re" kind="data" color="255 70 50" initlabel="bg.atto_movimento_re" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		
+		
+		<BlockGenus name="atto_movimento_direita" kind="data" color="255 70 50" initlabel="bg.atto_movimento_direita" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_movimento_esquerda" kind="data" color="255 70 50" initlabel="bg.atto_movimento_esquerda" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_d10" kind="data" color="0 0 175" initlabel="bg.atto_d10" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+		<BlockGenus name="atto_d11" kind="data" color="0 0 175" initlabel="bg.atto_d11" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+		
+		
 		
 	</BlockGenuses>
 
 <!-- Start of Ardublock Standard UI layout -->
 	<BlockFamilies>
+		<BlockFamily>
+			<FamilyMember>atto_movimento_frente</FamilyMember>
+			<FamilyMember>atto_movimento_re</FamilyMember>
+			<FamilyMember>atto_movimento_direita</FamilyMember>
+			<FamilyMember>atto_movimento_esquerda</FamilyMember>
+		</BlockFamily>
+		<BlockFamily>
+			<FamilyMember>atto_d10</FamilyMember>
+			<FamilyMember>atto_d11</FamilyMember>
+		</BlockFamily>
 		<BlockFamily>
 			<FamilyMember>digital-high</FamilyMember>
 			<FamilyMember>digital-low</FamilyMember>
@@ -12543,7 +12885,13 @@
 			<FamilyMember>temp</FamilyMember>
 			<FamilyMember>pressure</FamilyMember>
 		</BlockFamily>
-	</BlockFamilies>
+		
+	<!--	<BlockFamily>
+			<FamilyMember>atto_led_verde</FamilyMember>
+			<FamilyMember>atto_buzzer</FamilyMember>
+			
+		</BlockFamily> -->
+	</BlockFamilies> 
 
 	<BlockDrawerSets>
 		<BlockDrawerSet name="factory" type="stack" location="southwest" window-per-drawer="no" drawer-draggable="no">
@@ -12648,6 +12996,7 @@
 				<BlockGenusMember>create_variable_vector</BlockGenusMember>
 				<BlockGenusMember>variable_vector</BlockGenusMember>
 				<BlockGenusMember>setter_variable_vector</BlockGenusMember>
+				<BlockGenusMember>atto_movimento_frente</BlockGenusMember>
 			</BlockDrawer>
 			<BlockDrawer button-color="205 133 63" name="bd.utilities" type="factory">
 				<BlockGenusMember>servo_default</BlockGenusMember>
@@ -12842,6 +13191,7 @@
 				<BlockGenusMember>seeed_mq9_sensor</BlockGenusMember>
 				<BlockGenusMember>seeed_mp3_sensor</BlockGenusMember>
 				<BlockGenusMember>seeed_o2_sensor</BlockGenusMember>
+
 			</BlockDrawer>
 <!--
 			<BlockDrawer button-color="20 206 20" name="bd.DuinoEDU">
@@ -13215,6 +13565,7 @@
 				<BlockGenusMember>mcp4725</BlockGenusMember>
 			</BlockDrawer>
 			
+			
 			<!--
 			==========================================================================
 			==========================================================================
@@ -13228,13 +13579,30 @@
 			==========================================================================
 -->
 			<BlockDrawer button-color="200 0 215" name="bd.atto" type="factory">
-                <BlockGenusMember>install_dsp</BlockGenusMember>
+                <!--<BlockGenusMember>install_dsp</BlockGenusMember>
                 <BlockGenusMember>print_dsp</BlockGenusMember>
                 <BlockGenusMember>clean_dsp</BlockGenusMember>
                 <BlockGenusMember>install_gy</BlockGenusMember>
                 <BlockGenusMember>read_gy</BlockGenusMember>
                 <BlockGenusMember>install_tcs3200</BlockGenusMember>
-				<BlockGenusMember>read_tcs3200</BlockGenusMember>
+				<BlockGenusMember>read_tcs3200</BlockGenusMember>-->
+				<BlockGenusMember>atto_push_buttonn</BlockGenusMember>
+				<BlockGenusMember>atto_led_verde</BlockGenusMember>
+				<BlockGenusMember>atto_led_vermelho</BlockGenusMember>
+				<BlockGenusMember>atto_led_amarelo</BlockGenusMember>
+				<BlockGenusMember>atto_led_pwm</BlockGenusMember>
+				<BlockGenusMember>atto_buzzer</BlockGenusMember>
+				<BlockGenusMember>atto_LDR</BlockGenusMember>
+				<BlockGenusMember>atto_LM35</BlockGenusMember>
+				<BlockGenusMember>atto_ultrassonic</BlockGenusMember>
+				<BlockGenusMember>atto_magnetic</BlockGenusMember>
+				<BlockGenusMember>atto_seguidor_linha</BlockGenusMember>
+				<BlockGenusMember>atto_potenciometro</BlockGenusMember>
+				<BlockGenusMember>atto_servo</BlockGenusMember>
+				<BlockGenusMember>atto_motor_m1</BlockGenusMember>
+				<BlockGenusMember>atto_d10</BlockGenusMember>
+
+
                 
 			</BlockDrawer>
 			
