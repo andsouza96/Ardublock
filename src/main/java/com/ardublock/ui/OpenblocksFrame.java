@@ -74,7 +74,7 @@ public class OpenblocksFrame extends JFrame
 		this.setLayout(new BorderLayout());
 		//put the frame to the center of screen
 		this.setLocationRelativeTo(null);
-		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//	
 		
 		uiMessageBundle = ResourceBundle.getBundle("com/ardublock/block/ardublock");
 		
@@ -152,7 +152,7 @@ public class OpenblocksFrame extends JFrame
 		buttons.add(generateButton);
 		buttons.add(serialMonitorButton);
 
-		JPanel bottomPanel = new JPanel();
+		/*JPanel bottomPanel = new JPanel();
 		JButton websiteButton = new JButton(uiMessageBundle.getString("ardublock.ui.website"));
 		websiteButton.addActionListener(new ActionListener () {
 			public void actionPerformed(ActionEvent e) {
@@ -172,11 +172,11 @@ public class OpenblocksFrame extends JFrame
 		
 		bottomPanel.add(saveImageButton);
 		bottomPanel.add(websiteButton);
-		bottomPanel.add(versionLabel);
+		bottomPanel.add(versionLabel);*/
 
 		
 		this.add(buttons, BorderLayout.NORTH);
-		this.add(bottomPanel, BorderLayout.SOUTH);
+		//this.add(bottomPanel, BorderLayout.SOUTH);
 		this.add(workspace, BorderLayout.CENTER);
 	}
 	

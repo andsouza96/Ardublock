@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
 <Pages drawer-with-page="yes">
-<Page page-color="40 40 40" page-drawer="ArduBlock" page-infullview="yes" page-name="ArduBlock" page-width="1280">
+<Page page-color="160 160 160" page-drawer="ArduBlock" page-infullview="yes" page-name="ArduBlock" page-width="1280">
 <PageBlocks>
 <Block genus-name="loop" id="149">
 <Location>

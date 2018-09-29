@@ -26,7 +26,7 @@
 	<BlockGenuses>
 		<BlockGenus name="dummy" kind="command" initlabel="" color="0 0 0" />
 	    <!-- ******************** NEW FOR LOOP **************** -->
-		<BlockGenus name="repeat_control" kind="command" color="255 240 0" initlabel="bg.repeat_control">
+		<BlockGenus name="repeat_control" kind="command" color="145 10 65" initlabel="bg.repeat_control">
 			<description>
 				<text>repeat</text>
 				<arg-description n="1" name="variable">
@@ -64,7 +64,7 @@
 		</BlockGenus>
 		
 		<!-- ******************** Controls Menu *************** -->
-		<BlockGenus name="program" kind="command" color="255 240 0" initlabel="bg.program" is-starter="yes" is-terminator="yes" label-unique="no">
+		<BlockGenus name="program" kind="command" color="145 10 65" initlabel="bg.program" is-starter="yes" is-terminator="yes" label-unique="no">
 			<description>
 				<text>this is the loop of the arduino</text>
 				<arg-description n="1" name="setup">
@@ -79,7 +79,7 @@
 				<BlockConnector connector-type="cmd" connector-kind="socket" label="bc.loop" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="loop" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
+		<BlockGenus name="loop" kind="command" color="145 10 65" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
 			<description>
 				<text>this is the loop of the arduino</text>
 				<arg-description n="2" name="start">
@@ -91,12 +91,12 @@
 			</BlockConnectors>
 		</BlockGenus>
 		<!-- legacy support -->
-		<BlockGenus name="loop1" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
-		<BlockGenus name="loop2" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
-		<BlockGenus name="loop3" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
+		<BlockGenus name="loop1" kind="command" color="145 10 65" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
+		<BlockGenus name="loop2" kind="command" color="145 10 65" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
+		<BlockGenus name="loop3" kind="command" color="145 10 65" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
 		<!-- end of legacy support -->
 
-		<BlockGenus name="delay" kind="command" color="255 240 0" initlabel="bg.delay">
+		<BlockGenus name="delay" kind="command" color="145 10 65" initlabel="bg.delay">
 			<description>
 				<text>program delay in x milliseconds</text>
 			</description>
@@ -107,7 +107,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="if" kind="command" initlabel="bg.if" color="255 240 0">
+		<BlockGenus name="if" kind="command" initlabel="bg.if" color="145 10 65">
 			<description>
 				<text>
 					If
@@ -129,7 +129,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="ifelse" kind="command" initlabel="bg.ifelse" color="255 240 0">
+		<BlockGenus name="ifelse" kind="command" initlabel="bg.ifelse" color="145 10 65">
 			<description>
 				<text>
 					Does the first list of commands if the test specified is
@@ -154,7 +154,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="while" kind="command" initlabel="bg.while" color="255 240 0">
+		<BlockGenus name="while" kind="command" initlabel="bg.while" color="145 10 65">
 			<description>
 				<text>
 					While Block
@@ -173,7 +173,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-	<BlockGenus name="do_while" kind="command" initlabel="bg.do_while" color="255 240 0">
+	<BlockGenus name="do_while" kind="command" initlabel="bg.do_while" color="145 10 65">
           <description>            
 			<text>
                 Do While Block
@@ -193,13 +193,13 @@
           </BlockConnectors>
       </BlockGenus> 
 		
-		<BlockGenus name="break" kind="command" color="255 240 0" initlabel="bg.break">
+		<BlockGenus name="break" kind="command" color="145 10 65" initlabel="bg.break">
 			<description>
 				<text>Repeat the commands for "times"</text>
 			</description>
 		</BlockGenus>
 
-		<BlockGenus name="repeat_times" kind="command" color="255 240 0" initlabel="bg.repeat_times">
+		<BlockGenus name="repeat_times" kind="command" color="145 10 65" initlabel="bg.repeat_times">
 			<description>
 				<text>Repeat the commands for "times"</text>
 				<arg-description n="1" name="repeat">
@@ -217,7 +217,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="repeat" kind="command" color="255 240 0" initlabel="bg.repeat">
+		<BlockGenus name="repeat" kind="command" color="145 10 65" initlabel="bg.repeat">
 			<description>
 				<text>repeat</text>
 				<arg-description n="1" name="variable">
@@ -240,7 +240,7 @@
 				<BlockConnector label="bc.commands" connector-type="cmd" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="subroutine" kind="command" color="255 240 0" initlabel="bg.subroutine" is-starter="yes" is-terminator="yes" label-unique="yes" editable-label="yes">
+		<BlockGenus name="subroutine" kind="command" color="145 10 65" initlabel="bg.subroutine" is-starter="yes" is-terminator="yes" label-unique="yes" editable-label="yes">
 			<description>
 				<text>subroutine</text>
 			</description>
@@ -248,12 +248,12 @@
 				<BlockConnector label="bc.commands" connector-type="cmd" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="subroutine-ref" kind="command" color="255 240 0" initlabel="bg.subroutine" editable-label="yes">
+		<BlockGenus name="subroutine-ref" kind="command" color="145 10 65" initlabel="bg.subroutine" editable-label="yes">
 			<description>
 				<text>invoke subroutine</text>
 			</description>
 		</BlockGenus>
-		<BlockGenus name="subroutine_var" kind="command" color="255 240 0" initlabel="bg.subroutine_var" is-starter="yes" is-terminator="yes" label-unique="yes" editable-label="yes">
+		<BlockGenus name="subroutine_var" kind="command" color="145 10 65" initlabel="bg.subroutine_var" is-starter="yes" is-terminator="yes" label-unique="yes" editable-label="yes">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="">
 					<DefaultArg genus-name="ref_var" label="variable_transmise" />
@@ -261,19 +261,19 @@
 				<BlockConnector label="bc.commands" connector-type="cmd" connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="subroutine-ref_var" kind="command" color="255 240 0" initlabel="bg.subroutine_var" editable-label="yes">
+		<BlockGenus name="subroutine-ref_var" kind="command" color="145 10 65" initlabel="bg.subroutine_var" editable-label="yes">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.transmit">
 					<DefaultArg genus-name="number" label="2" />
 				</BlockConnector>
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="ref_var" kind="data" color="255 240 0" initlabel="bg.ref_var" editable-label="yes">
+		<BlockGenus name="ref_var" kind="data" color="145 10 65" initlabel="bg.ref_var" editable-label="yes">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="delay_microseconds" kind="command" color="255 240 0" initlabel="bg.delay_microseconds">
+		<BlockGenus name="delay_microseconds" kind="command" color="145 10 65" initlabel="bg.delay_microseconds">
 			<description>
 				<text>program delay in x milliseconds</text>
 			</description>
@@ -1878,7 +1878,7 @@
 		</BlockGenus>	
 
 		<!--****************** Numbers/Constants *************** -->
-		<BlockGenus name="millis" kind="data" color="255 240 0" initlabel="bg.millis">
+		<BlockGenus name="millis" kind="data" color="145 10 65" initlabel="bg.millis">
 			<description>
 				<text>Time in milliseconds</text>
 			</description>
@@ -11828,7 +11828,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_led_verde" kind="command" color="200 125 210" initlabel="bg.atto_led_verde">
+		<BlockGenus name="atto_led_verde" kind="command" color="255 240 0" initlabel="bg.atto_led_verde">
 			<description>
 				<text> Atto LED green </text>
 			</description>
@@ -11847,7 +11847,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_led_vermelho" kind="command" color="200 125 210" initlabel="bg.atto_led_vermelho">
+		<BlockGenus name="atto_led_vermelho" kind="command" color="255 240 0" initlabel="bg.atto_led_vermelho">
 			<description>
 				<text> Atto LED red </text>
 			</description>
@@ -11866,7 +11866,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_led_amarelo" kind="command" color="200 125 210" initlabel="bg.atto_led_amarelo">
+		<BlockGenus name="atto_led_amarelo" kind="command" color="255 240 0" initlabel="bg.atto_led_amarelo">
 			<description>
 				<text> Atto LED yellow </text>
 			</description>
@@ -11885,7 +11885,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_buzzer" kind="command" color="200 125 210" initlabel="bg.atto_buzzer">
+		<BlockGenus name="atto_buzzer" kind="command" color="255 240 0" initlabel="bg.atto_buzzer">
 			
 			<description>
 				<text>Generates a square wave of the specified frequency (and 50%duty cycle) on a pin.</text>
@@ -11898,6 +11898,12 @@
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.frequency">
 					<DefaultArg genus-name="number" label="440" />
 				</BlockConnector>
+			<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_seconds">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
 
 			</BlockConnectors>
 			
@@ -11909,7 +11915,7 @@
 			
 		</BlockGenus>
 		
-				<BlockGenus name="atto_LDR" kind="data" color="200 125 210" initlabel="bg.atto_LDR">
+				<BlockGenus name="atto_LDR" kind="data" color="255 240 0" initlabel="bg.atto_LDR">
 			<description>
 				<text>Sensor LDR</text>
 			</description>
@@ -11926,7 +11932,7 @@
 			</Images>
 		</BlockGenus>
 
-				<BlockGenus name="atto_led_pwm" kind="command" color="200 125 210" initlabel="bg.atto_led_pwm">
+				<BlockGenus name="atto_led_rgb" kind="command" color="255 240 0" initlabel="bg.atto_led_rgb">
 					<description>
 						<text>LED RGB</text>
 					</description>
@@ -11934,9 +11940,9 @@
 						<BlockConnector connector-type="number" connector-kind="socket" label="#pino">
 							<DefaultArg genus-name="pinListDigital_D10" label="10" />
 						</BlockConnector>
-						<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
-							<DefaultArg genus-name="digital-on" label="ON" />
-						</BlockConnector>
+						<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
 					</BlockConnectors>
 					<Images>
 						<Image>
@@ -11946,7 +11952,7 @@
 				</BlockGenus>
 
 
-        <BlockGenus name="atto_LM35" kind="data" color="200 125 210" initlabel="bg.atto_LM35">
+        <BlockGenus name="atto_LM35" kind="data" color="255 240 0" initlabel="bg.atto_LM35">
 			<description>
 				<text>LM35</text>
 			</description>
@@ -11964,7 +11970,7 @@
 		</BlockGenus>
 
 		
-		        <BlockGenus name="atto_seguidor_linha" kind="data" color="200 125 210" initlabel="bg.atto_seguidor_linha">
+		        <BlockGenus name="atto_proximidade" kind="data" color="255 240 0" initlabel="bg.atto_proximidade">
 			<description>
 				<text>proximidade </text>
 			</description>
@@ -11981,7 +11987,24 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_potenciometro" kind="data" color="200 125 210" initlabel="bg.atto_potenciometro">
+		<BlockGenus name="atto_seguidor_linha" kind="data" color="255 240 0" initlabel="bg.atto_seguidor_linha">
+			<description>
+				<text>proximidade </text>
+			</description>
+			<BlockConnectors>
+                <BlockConnector connector-type="number" connector-kind="plug" label="" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="#pino">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Linha.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_potenciometro" kind="data" color="255 240 0" initlabel="bg.atto_potenciometro">
 			<description>
 				<text>potenciometro </text>
 			</description>
@@ -11999,7 +12022,7 @@
 		</BlockGenus>
                 
 
-<BlockGenus name="atto_ultrassonic" kind="data" color="200 125 210" initlabel="bg.atto_ultrassonic">
+<BlockGenus name="atto_ultrassonic" kind="data" color="255 240 0" initlabel="bg.atto_ultrassonic">
 			<description>
 				<text>Ultrasonic distance sensor</text>
 			</description>
@@ -12022,7 +12045,7 @@
 			</Images>
 		</BlockGenus>
 
-		<BlockGenus name="atto_push_buttonn" kind="data" color="200 125 210" initlabel="bg.atto_push_buttonn">
+		<BlockGenus name="atto_push_buttonn" kind="data" color="255 240 0" initlabel="bg.atto_push_buttonn">
 			<description>
 				<text>Atto Button</text>
 			</description>
@@ -12039,7 +12062,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_magnetic" kind="data" color="200 125 210" initlabel="bg.atto_magnetic">
+		<BlockGenus name="atto_magnetic" kind="data" color="255 240 0" initlabel="bg.atto_magnetic">
 			<description>
 				<text>Atto magnetic</text>
 			</description>
@@ -12056,7 +12079,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_servo" kind="command" color="200 125 210" initlabel="bg.atto_servo">
+		<BlockGenus name="atto_servo" kind="command" color="255 240 0" initlabel="bg.atto_servo">
 			<description>
 				<text>Servo Default</text>
 			</description>
@@ -12075,7 +12098,7 @@
 			</Images>
 		</BlockGenus>
 		
-				<BlockGenus name="atto_motor_m1" kind="command" color="200 125 210" initlabel="bg.atto_motor_m1">
+				<BlockGenus name="atto_motor_m1" kind="command" color="255 240 0" initlabel="bg.atto_motor_m1">
 			<description>
 				<text>Servo Default</text>
 			</description>
@@ -12145,6 +12168,18 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
+		
+		<BlockGenus name="atto_movimento_parado" kind="data" color="255 70 50" initlabel="bg.atto_movimento_parado" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		
 		<BlockGenus name="atto_d10" kind="data" color="0 0 175" initlabel="bg.atto_d10" editable-label="no">
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug"/>
@@ -12154,6 +12189,35 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug"/>
 			</BlockConnectors>		
+		</BlockGenus>
+		
+		<BlockGenus name="atto_number" kind="data" color="255 70 50" initlabel="bg.atto_number" editable-label="yes">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+		
+		
+		<BlockGenus name="atto_motor_m2" kind="command" color="255 240 0" initlabel="bg.atto_motor_m1">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="atto_d10" label="D10"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_velocidade">
+					<DefaultArg genus-name="atto_number" label="255" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_seconds">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_M1.png</FileLocation>
+				</Image>
+			</Images>
 		</BlockGenus>
 		
 		
@@ -12167,6 +12231,7 @@
 			<FamilyMember>atto_movimento_re</FamilyMember>
 			<FamilyMember>atto_movimento_direita</FamilyMember>
 			<FamilyMember>atto_movimento_esquerda</FamilyMember>
+			<FamilyMember>atto_movimento_parado</FamilyMember>
 		</BlockFamily>
 		<BlockFamily>
 			<FamilyMember>atto_d10</FamilyMember>
@@ -12894,8 +12959,8 @@
 	</BlockFamilies> 
 
 	<BlockDrawerSets>
-		<BlockDrawerSet name="factory" type="stack" location="southwest" window-per-drawer="no" drawer-draggable="no">
-			<BlockDrawer name="bd.control" type="factory" is-open="yes" button-color="255 255 0">
+		<BlockDrawerSet name="factory" type="stack" location="southwest" window-per-drawer="no" drawer-draggable="no" color="40 40 40" >
+			<BlockDrawer name="bd.control" type="factory" is-open="yes" button-color="145 10 65">
 				<BlockGenusMember>loop</BlockGenusMember>
 				<BlockGenusMember>program</BlockGenusMember>
 				<BlockGenusMember>delay</BlockGenusMember>
@@ -12929,7 +12994,7 @@
 				<BlockGenusMember>pinListAnalog_A0</BlockGenusMember>
 				<BlockGenusMember>pinListAnalogWrite_D3</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="255 163 82" name="bd.logic" type="factory">
+			<BlockDrawer button-color="255 87 51" name="bd.logic" type="factory">
 				<BlockGenusMember>greater</BlockGenusMember>
 				<BlockGenusMember>less</BlockGenusMember>
 				<BlockGenusMember>equal</BlockGenusMember>
@@ -12998,7 +13063,7 @@
 				<BlockGenusMember>setter_variable_vector</BlockGenusMember>
 				<BlockGenusMember>atto_movimento_frente</BlockGenusMember>
 			</BlockDrawer>
-			<BlockDrawer button-color="205 133 63" name="bd.utilities" type="factory">
+			<!--<BlockDrawer button-color="205 133 63" name="bd.utilities" type="factory">
 				<BlockGenusMember>servo_default</BlockGenusMember>
 				<BlockGenusMember>LCD_I2C_Sainsmart_20by4</BlockGenusMember>
 				<BlockGenusMember>LCD_command_lightOff</BlockGenusMember>
@@ -13008,7 +13073,7 @@
 				<BlockGenusMember>df_buzzer</BlockGenusMember>
 				<BlockGenusMember>df_buzzer_tone</BlockGenusMember>
 				<BlockGenusMember>df_buzzer_tone_delay</BlockGenusMember>
-			</BlockDrawer>
+			</BlockDrawer>-->
 			<BlockDrawer button-color="255 255 255" name="bd.communication" type="factory">
 				<BlockGenusMember>serial_write</BlockGenusMember>
 				<BlockGenusMember>serial_print</BlockGenusMember>
@@ -13051,7 +13116,7 @@
 				<BlockGenusMember>scoop_event_change</BlockGenusMember>
 			</BlockDrawer>
 -->
-			<BlockDrawer button-color="0 78 9" name="bd.storage" type="factory">
+			<BlockDrawer button-color="14 102 85" name="bd.storage" type="factory">
 				<BlockGenusMember>eeprom_read_int</BlockGenusMember>
 				<BlockGenusMember>eeprom_write_int</BlockGenusMember>
 				<BlockGenusMember>eeprom_read_long</BlockGenusMember>
@@ -13076,16 +13141,17 @@
 				<BlockGenusMember>bleshield_compare</BlockGenusMember>
 			</BlockDrawer>
 -->
-			<BlockDrawer button-color="120 120 120" name="bd.especial" type="factory">
-<!--
+			<!-- <BlockDrawer button-color="120 120 120" name="bd.especial" type="factory"> 
+
 				<BlockGenusMember>code_head</BlockGenusMember>
 				<BlockGenusMember>code_setup</BlockGenusMember>
 				<BlockGenusMember>code_loop</BlockGenusMember>
--->
+
 				<BlockGenusMember>DuinoEDU_code_head</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_code_setup</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_code_loop</BlockGenusMember>
-			</BlockDrawer>
+			</BlockDrawer> -->
+			<!--
 			<BlockDrawer button-color="13 152 164" name="bd.tinkerkit" type="factory">
 				<BlockGenusMember>Tinker_LED</BlockGenusMember>
 				<BlockGenusMember>Tinker_LED_pwm</BlockGenusMember>
@@ -13193,6 +13259,8 @@
 				<BlockGenusMember>seeed_o2_sensor</BlockGenusMember>
 
 			</BlockDrawer>
+-->
+		
 <!--
 			<BlockDrawer button-color="20 206 20" name="bd.DuinoEDU">
 				<BlockGenusMember>DDRA</BlockGenusMember>
@@ -13531,19 +13599,19 @@
 			==========================================================================
 			==========================================================================
 -->
-            <BlockDrawer button-color="183 178 138" name="bd.teach_mechanics">
+           <!-- <BlockDrawer button-color="183 178 138" name="bd.teach_mechanics">
 				<BlockGenusMember>teach_ultrasonic</BlockGenusMember>
 				<BlockGenusMember>install_gy</BlockGenusMember>
 				<BlockGenusMember>read_gy</BlockGenusMember>
 				<BlockGenusMember>pulse</BlockGenusMember>
-				<BlockGenusMember>between</BlockGenusMember>
+				<BlockGenusMember>between</BlockGenusMember> -->
 <!--
 				<BlockGenusMember>two_pulse</BlockGenusMember>
 -->
 <!--
 				<BlockGenusMember>two_pulse_use</BlockGenusMember>
 -->
-				<BlockGenusMember>count_time</BlockGenusMember>
+<!--				<BlockGenusMember>count_time</BlockGenusMember>
 
 			</BlockDrawer>
 			<BlockDrawer button-color="246 67 67" name="bd.teach_thermo" type="factory">
@@ -13564,7 +13632,7 @@
 			<BlockDrawer button-color="212 108 108" name="bd.teach_others" type="factory">
 				<BlockGenusMember>mcp4725</BlockGenusMember>
 			</BlockDrawer>
-			
+			-->
 			
 			<!--
 			==========================================================================
@@ -13578,7 +13646,7 @@
 			==========================================================================
 			==========================================================================
 -->
-			<BlockDrawer button-color="200 0 215" name="bd.atto" type="factory">
+			<BlockDrawer button-color="255 255 0" name="bd.atto" type="factory">
                 <!--<BlockGenusMember>install_dsp</BlockGenusMember>
                 <BlockGenusMember>print_dsp</BlockGenusMember>
                 <BlockGenusMember>clean_dsp</BlockGenusMember>
@@ -13590,17 +13658,19 @@
 				<BlockGenusMember>atto_led_verde</BlockGenusMember>
 				<BlockGenusMember>atto_led_vermelho</BlockGenusMember>
 				<BlockGenusMember>atto_led_amarelo</BlockGenusMember>
-				<BlockGenusMember>atto_led_pwm</BlockGenusMember>
+				<BlockGenusMember>atto_led_rgb</BlockGenusMember>
 				<BlockGenusMember>atto_buzzer</BlockGenusMember>
 				<BlockGenusMember>atto_LDR</BlockGenusMember>
 				<BlockGenusMember>atto_LM35</BlockGenusMember>
 				<BlockGenusMember>atto_ultrassonic</BlockGenusMember>
 				<BlockGenusMember>atto_magnetic</BlockGenusMember>
+				<BlockGenusMember>atto_proximidade</BlockGenusMember>
 				<BlockGenusMember>atto_seguidor_linha</BlockGenusMember>
 				<BlockGenusMember>atto_potenciometro</BlockGenusMember>
 				<BlockGenusMember>atto_servo</BlockGenusMember>
 				<BlockGenusMember>atto_motor_m1</BlockGenusMember>
-				<BlockGenusMember>atto_d10</BlockGenusMember>
+				<BlockGenusMember>atto_motor_m2</BlockGenusMember>
+				<!--<BlockGenusMember>atto_d10</BlockGenusMember>-->
 
 
                 
@@ -13618,12 +13688,17 @@
 <!-- End of Ardublock Standard UI layout -->
 
 	<Pages drawer-with-page="yes">
-		<Page page-name="Main" page-width="400" page-color="128 128 128"/>
+
+		<Page page-name="Main" page-width="300" page-color="200 200 200"/>
+		
+		
+		
 	</Pages>
 
 	<TrashCan>
 		<OpenTrashImage>com/ardublock/block/trash_open.png</OpenTrashImage>
 		<ClosedTrashImage>com/ardublock/block/trash.png</ClosedTrashImage>
+		
 	</TrashCan>
 
 </BlockLangDef>

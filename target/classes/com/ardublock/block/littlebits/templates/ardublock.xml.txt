@@ -1,4 +1,4 @@
-	<BlockGenus name="BLOCK_NAME" kind="BLOCK_NAME_KIND" color="64 109 0" initlabel="BLOCK_LABEL">
+	<BlockGenus name="BLOCK_NAME" kind="BLOCK_NAME_KIND" color="40 40 40" initlabel="BLOCK_LABEL">
 		<description>
 			<text>BLOCK_DESC</text>
 		</description>

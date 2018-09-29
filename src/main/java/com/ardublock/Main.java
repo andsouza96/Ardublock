@@ -46,6 +46,6 @@ public class Main
 	private void startConsoleFrame()
 	{
 		ConsoleFrame consoleFrame = new ConsoleFrame();
-		consoleFrame.setVisible(true);
+		consoleFrame.setVisible(false);
 	}
 }

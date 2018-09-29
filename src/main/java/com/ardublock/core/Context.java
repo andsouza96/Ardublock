@@ -11,6 +11,16 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Set;
 
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.net.URL;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -175,6 +185,8 @@ public class Context
 		
 		Workspace workspace = workspaceController.getWorkspace();
 		Page page = workspace.getPageNamed("Main");
+		
+		
 		
 		FactoryManager manager = workspace.getFactoryManager();
 		Block newBlock;
