@@ -12103,10 +12103,10 @@
 				<text>Servo Default</text>
 			</description>
 			<BlockConnectors>
-				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_dir">
 					<DefaultArg genus-name="atto_d10" label="D10"/>
 				</BlockConnector>
-				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_esq">
 					<DefaultArg genus-name="atto_d11" label="D11" />
 				</BlockConnector>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_movimento">
