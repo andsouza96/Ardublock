@@ -107,7 +107,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="if" kind="command" initlabel="bg.if" color="145 10 65">
+		<BlockGenus name="if" kind="command" initlabel="bg.if" color="145 10 60">
 			<description>
 				<text>
 					If
