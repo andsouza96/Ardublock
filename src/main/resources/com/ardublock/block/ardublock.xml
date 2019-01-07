@@ -26,7 +26,7 @@
 	<BlockGenuses>
 		<BlockGenus name="dummy" kind="command" initlabel="" color="0 0 0" />
 	    <!-- ******************** NEW FOR LOOP **************** -->
-		<BlockGenus name="repeat_control" kind="command" color="145 10 65" initlabel="bg.repeat_control">
+		<BlockGenus name="repeat_control" kind="command" color="145 10 60" initlabel="bg.repeat_control">
 			<description>
 				<text>repeat</text>
 				<arg-description n="1" name="variable">
@@ -107,7 +107,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="if" kind="command" initlabel="bg.if" color="145 10 65">
+		<BlockGenus name="if" kind="command" initlabel="bg.if" color="145 10 60">
 			<description>
 				<text>
 					If
