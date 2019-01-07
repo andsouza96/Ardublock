@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="com.ardublock.MainTest" duration-ms="28" started-at="2018-10-01T08:26:42Z" finished-at="2018-10-01T08:26:42Z">
+  <suite name="com.ardublock.MainTest" duration-ms="23" started-at="2019-01-07T21:03:22Z" finished-at="2019-01-07T21:03:22Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="28" started-at="2018-10-01T08:26:42Z" finished-at="2018-10-01T08:26:42Z">
+    <test name="Command line test" duration-ms="23" started-at="2019-01-07T21:03:22Z" finished-at="2019-01-07T21:03:22Z">
       <class name="com.ardublock.MainTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ardublock.MainTest@511baa65]" name="setUp" is-config="true" duration-ms="12" started-at="2018-10-01T08:26:42Z" finished-at="2018-10-01T08:26:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ardublock.MainTest@43a25848]" name="setUp" is-config="true" duration-ms="13" started-at="2019-01-07T21:03:22Z" finished-at="2019-01-07T21:03:22Z">
         </test-method>
-        <test-method status="PASS" signature="testFiles()[pri:0, instance:com.ardublock.MainTest@511baa65]" name="testFiles" duration-ms="1" started-at="2018-10-01T08:26:42Z" finished-at="2018-10-01T08:26:42Z">
+        <test-method status="PASS" signature="testFiles()[pri:0, instance:com.ardublock.MainTest@43a25848]" name="testFiles" duration-ms="1" started-at="2019-01-07T21:03:22Z" finished-at="2019-01-07T21:03:22Z">
         </test-method>
-        <test-method status="PASS" signature="testSingleLoop()[pri:0, instance:com.ardublock.MainTest@511baa65]" name="testSingleLoop" duration-ms="1" started-at="2018-10-01T08:26:42Z" finished-at="2018-10-01T08:26:42Z">
+        <test-method status="PASS" signature="testSingleLoop()[pri:0, instance:com.ardublock.MainTest@43a25848]" name="testSingleLoop" duration-ms="0" started-at="2019-01-07T21:03:22Z" finished-at="2019-01-07T21:03:22Z">
         </test-method>
       </class>
     </test>

@@ -12122,6 +12122,7 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+
 		
 		<BlockGenus name="atto_movimento_frente" kind="data" color="255 70 50" initlabel="bg.atto_movimento_frente" editable-label="no">
 			<description>
@@ -12219,13 +12220,149 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+
+		<BlockGenus name="atto_motor_m1_fisica" kind="command" color="69 135 250" initlabel="bg.atto_motor_m1_fisica">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_dir">
+					<DefaultArg genus-name="atto_d10" label="D10"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_esq">
+					<DefaultArg genus-name="atto_d11" label="D11" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_movimento">
+					<DefaultArg genus-name="atto_movimento_frente_fisica" label="Frente" />
+				</BlockConnector>	
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_seconds">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_velocidade">
+					<DefaultArg genus-name="atto_number" label="255" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_M1.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="atto_MRU" kind="command" color="69 135 250" initlabel="bg.atto_MRU">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Motor Direita">
+					<DefaultArg genus-name="atto_d10" label="D10"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Motor Esquerda">
+					<DefaultArg genus-name="atto_d11" label="D11" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="potenciometro">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Ultrassonico">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Frequencia(Hz)">
+					<DefaultArg genus-name="number" label="20" />
+				</BlockConnector>
+
+	
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/MRU.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+
+		<BlockGenus name="atto_movimento_frente_fisica" kind="data" color="255 70 50" initlabel="bg.atto_movimento_frente_fisica" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
 		
+		<BlockGenus name="atto_movimento_re_fisica" kind="data" color="255 70 50" initlabel="bg.atto_movimento_re_fisica" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="atto_movimento_parado_fisica" kind="data" color="255 70 50" initlabel="bg.atto_movimento_parado_fisica" editable-label="no">
+			<description>
+				<text>
+					'Double' constant
+				</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="atto_Hooke" kind="command" color="69 135 250" initlabel="bg.atto_Hooke">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Zera">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga">
+					<DefaultArg genus-name="pinListDigital_D12" label="12" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Ultrassonico">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Frequencia(Hz)">
+					<DefaultArg genus-name="number" label="5" />
+				</BlockConnector>
+
+	
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Lei_de_hooke.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
 		
 	</BlockGenuses>
 
 <!-- Start of Ardublock Standard UI layout -->
 	<BlockFamilies>
+		<BlockFamily>
+			<FamilyMember>atto_movimento_frente_fisica</FamilyMember>
+			<FamilyMember>atto_movimento_re_fisica</FamilyMember>
+			<FamilyMember>atto_movimento_parado_fisica</FamilyMember>
+		</BlockFamily>
 		<BlockFamily>
 			<FamilyMember>atto_movimento_frente</FamilyMember>
 			<FamilyMember>atto_movimento_re</FamilyMember>
@@ -13670,9 +13807,18 @@
 				<BlockGenusMember>atto_servo</BlockGenusMember>
 				<BlockGenusMember>atto_motor_m1</BlockGenusMember>
 				<BlockGenusMember>atto_motor_m2</BlockGenusMember>
+
 				<!--<BlockGenusMember>atto_d10</BlockGenusMember>-->
 
 
+                
+			</BlockDrawer>
+
+
+			<BlockDrawer button-color="69 135 250" name="bd.Atto_fisica" type="factory">
+					<!--<BlockGenusMember>atto_motor_m1_fisica</BlockGenusMember>-->
+					<BlockGenusMember>atto_MRU</BlockGenusMember>
+					<BlockGenusMember>atto_Hooke</BlockGenusMember>                
                 
 			</BlockDrawer>
 			
