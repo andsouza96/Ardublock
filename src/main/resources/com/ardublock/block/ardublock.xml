@@ -12191,6 +12191,17 @@
 				<BlockConnector connector-type="number" connector-kind="plug"/>
 			</BlockConnectors>		
 		</BlockGenus>
+        
+        <BlockGenus name="atto_d2" kind="data" color="0 0 175" initlabel="bg.atto_d2" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+		<BlockGenus name="atto_d3" kind="data" color="0 0 175" initlabel="bg.atto_d3" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
 		
 		<BlockGenus name="atto_number" kind="data" color="255 70 50" initlabel="bg.atto_number" editable-label="yes">
 			<BlockConnectors>
@@ -12260,10 +12271,10 @@
 				</BlockConnector>
 
 				<BlockConnector connector-type="number" connector-kind="socket" label="Motor Direita">
-					<DefaultArg genus-name="atto_d10" label="D10"/>
+					<DefaultArg genus-name="atto_d10" label="D5/10"/>
 				</BlockConnector>
 				<BlockConnector connector-type="number" connector-kind="socket" label="Motor Esquerda">
-					<DefaultArg genus-name="atto_d11" label="D11" />
+					<DefaultArg genus-name="atto_d11" label="D6/11" />
 				</BlockConnector>
 
 				<BlockConnector connector-type="number" connector-kind="socket" label="potenciometro">
@@ -12352,7 +12363,93 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+        
+        
+        <BlockGenus name="Atto_Tempo" kind="command" color="69 135 250" initlabel="bg.Atto_Tempo">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Iniciar">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LED">
+					<DefaultArg genus-name="pinListDigital_D12" label="12" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LDR">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+
+            </BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Lei_de_hooke.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
+        
+        <BlockGenus name="Atto_Tempo_2_Furos" kind="command" color="69 135 250" initlabel="bg.Atto_Tempo_2_Furos">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Pino Digital">
+					<DefaultArg genus-name="atto_d2" label="D2"/>
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LED">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LDR">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+
+            </BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Lei_de_hooke.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        <BlockGenus name="Atto_Tempo_Varios_Furos" kind="command" color="69 135 250" initlabel="bg.Atto_Tempo_Varios_Furos">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Pino Digital">
+					<DefaultArg genus-name="atto_d2" label="D2"/>
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LED">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LDR">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Furos">
+					<DefaultArg genus-name="number" label="2" />
+				</BlockConnector>
+
+            </BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Lei_de_hooke.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
 	</BlockGenuses>
 
@@ -12369,7 +12466,12 @@
 			<FamilyMember>atto_movimento_direita</FamilyMember>
 			<FamilyMember>atto_movimento_esquerda</FamilyMember>
 			<FamilyMember>atto_movimento_parado</FamilyMember>
+            
 		</BlockFamily>
+        <BlockFamily>
+			<FamilyMember>atto_d2</FamilyMember>
+			<FamilyMember>atto_d3</FamilyMember>
+		</BlockFamily> 
 		<BlockFamily>
 			<FamilyMember>atto_d10</FamilyMember>
 			<FamilyMember>atto_d11</FamilyMember>
@@ -13818,7 +13920,10 @@
 			<BlockDrawer button-color="69 135 250" name="bd.Atto_fisica" type="factory">
 					<!--<BlockGenusMember>atto_motor_m1_fisica</BlockGenusMember>-->
 					<BlockGenusMember>atto_MRU</BlockGenusMember>
-					<BlockGenusMember>atto_Hooke</BlockGenusMember>                
+					<BlockGenusMember>atto_Hooke</BlockGenusMember>
+                    <BlockGenusMember>Atto_Tempo</BlockGenusMember>
+                 <BlockGenusMember>Atto_Tempo_2_Furos</BlockGenusMember> 
+                <BlockGenusMember>Atto_Tempo_Varios_Furos</BlockGenusMember>
                 
 			</BlockDrawer>
 			
