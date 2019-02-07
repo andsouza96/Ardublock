@@ -12104,10 +12104,10 @@
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_dir">
-					<DefaultArg genus-name="atto_d10" label="D10"/>
+					<DefaultArg genus-name="atto_d10" label="D5/10"/>
 				</BlockConnector>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_esq">
-					<DefaultArg genus-name="atto_d11" label="D11" />
+					<DefaultArg genus-name="atto_d11" label="D6/11" />
 				</BlockConnector>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_movimento">
 					<DefaultArg genus-name="atto_movimento_frente" label="Frente" />
@@ -12216,7 +12216,7 @@
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="atto_d10" label="D10"/>
+					<DefaultArg genus-name="atto_d10" label="D5/10"/>
 				</BlockConnector>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.atto_velocidade">
 					<DefaultArg genus-name="atto_number" label="255" />
@@ -12227,7 +12227,7 @@
 			</BlockConnectors>
 			<Images>
 				<Image>
-					<FileLocation>com/ardublock/block/Atto/Atto_M1.png</FileLocation>
+					<FileLocation>com/ardublock/block/Atto/Atto_M2.png</FileLocation>
 				</Image>
 			</Images>
 		</BlockGenus>
@@ -12371,12 +12371,12 @@
 			</description>
 			<BlockConnectors>
 				
-				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Iniciar">
-					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
+					<DefaultArg genus-name="atto_d2" label="D2" />
 				</BlockConnector>
 
 				<BlockConnector connector-type="number" connector-kind="socket" label="LED">
-					<DefaultArg genus-name="pinListDigital_D12" label="12" />
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
 				</BlockConnector>
 
 
@@ -12387,7 +12387,7 @@
             </BlockConnectors>
 			<Images>
 				<Image>
-					<FileLocation>com/ardublock/block/Atto/Lei_de_hooke.png</FileLocation>
+					<FileLocation>com/ardublock/block/Atto/Atto_Medidor_Tempo.png</FileLocation>
 				</Image>
 			</Images>
 		</BlockGenus>
@@ -12399,7 +12399,7 @@
 			</description>
 			<BlockConnectors>
 				
-				<BlockConnector connector-type="number" connector-kind="socket" label="Pino Digital">
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
 					<DefaultArg genus-name="atto_d2" label="D2"/>
 				</BlockConnector>
 
@@ -12426,7 +12426,7 @@
 			</description>
 			<BlockConnectors>
 				
-				<BlockConnector connector-type="number" connector-kind="socket" label="Pino Digital">
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
 					<DefaultArg genus-name="atto_d2" label="D2"/>
 				</BlockConnector>
 
@@ -12446,7 +12446,38 @@
             </BlockConnectors>
 			<Images>
 				<Image>
-					<FileLocation>com/ardublock/block/Atto/Lei_de_hooke.png</FileLocation>
+					<FileLocation>com/ardublock/block/Atto/Atto_Varios_Furos.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        <BlockGenus name="Atto_Pendulo" kind="command" color="69 135 250" initlabel="bg.Atto_Pendulo">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
+					<DefaultArg genus-name="atto_d2" label="D2"/>
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LED">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LDR">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Repeticoes">
+					<DefaultArg genus-name="number" label="2" />
+				</BlockConnector>
+
+            </BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Pendulo.png</FileLocation>
 				</Image>
 			</Images>
 		</BlockGenus>
@@ -13922,8 +13953,9 @@
 					<BlockGenusMember>atto_MRU</BlockGenusMember>
 					<BlockGenusMember>atto_Hooke</BlockGenusMember>
                     <BlockGenusMember>Atto_Tempo</BlockGenusMember>
-                 <BlockGenusMember>Atto_Tempo_2_Furos</BlockGenusMember> 
+                 <!--<BlockGenusMember>Atto_Tempo_2_Furos</BlockGenusMember>--> 
                 <BlockGenusMember>Atto_Tempo_Varios_Furos</BlockGenusMember>
+                <BlockGenusMember>Atto_Pendulo</BlockGenusMember>
                 
 			</BlockDrawer>
 			
