@@ -12481,6 +12481,61 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+        
+        <BlockGenus name="atto_segLeiNewton" kind="command" color="69 135 250" initlabel="bg.atto_segLeiNewton">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
+					<DefaultArg genus-name="atto_d2" label="D2" />
+				</BlockConnector>
+
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Ultrassonico">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Distancia (cm)">
+					<DefaultArg genus-name="number" label="30" />
+				</BlockConnector>                
+
+					
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/segLeiNewton.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        <BlockGenus name="Atto_Conserv_Energ" kind="command" color="69 135 250" initlabel="bg.Atto_Conserv_Energ">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
+					<DefaultArg genus-name="atto_d2" label="D2" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LED">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LDR">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+
+            </BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Conserv_Energ.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
 	</BlockGenuses>
 
@@ -13956,6 +14011,9 @@
                  <!--<BlockGenusMember>Atto_Tempo_2_Furos</BlockGenusMember>--> 
                 <BlockGenusMember>Atto_Tempo_Varios_Furos</BlockGenusMember>
                 <BlockGenusMember>Atto_Pendulo</BlockGenusMember>
+                <BlockGenusMember>Atto_Conserv_Energ</BlockGenusMember>
+                <BlockGenusMember>atto_segLeiNewton</BlockGenusMember>
+                
                 
 			</BlockDrawer>
 			
