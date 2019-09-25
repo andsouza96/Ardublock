@@ -64,7 +64,7 @@
 		</BlockGenus>
 		
 		<!-- ******************** Controls Menu *************** -->
-		<BlockGenus name="program" kind="command" color="145 10 65" initlabel="bg.program" is-starter="yes" is-terminator="yes" label-unique="no">
+		<BlockGenus name="program" kind="command" color="0 200 0" initlabel="bg.program" is-starter="yes" is-terminator="yes" label-unique="no">
 			<description>
 				<text>this is the loop of the arduino</text>
 				<arg-description n="1" name="setup">
@@ -79,7 +79,7 @@
 				<BlockConnector connector-type="cmd" connector-kind="socket" label="bc.loop" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="loop" kind="command" color="145 10 65" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
+		<BlockGenus name="loop" kind="command" color="0 200 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
 			<description>
 				<text>this is the loop of the arduino</text>
 				<arg-description n="2" name="start">
@@ -2173,7 +2173,7 @@
 					<DefaultArg genus-name="variable_digital" label="Bool" />
 				</BlockConnector>
 				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.value">
-					<DefaultArg genus-name="digital-high" label="HIGH" />
+					<DefaultArg genus-name="true" label="true" />
 				</BlockConnector>
 			</BlockConnectors>
 		</BlockGenus>
@@ -2566,7 +2566,7 @@
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="string" connector-kind="socket" >
-					<DefaultArg genus-name="message" label="message" />
+					<DefaultArg genus-name="message" label="mensagem" />
 				</BlockConnector>
 			</BlockConnectors>
 		</BlockGenus>
@@ -2577,7 +2577,7 @@
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="string" connector-kind="socket" label="bc.message">
-					<DefaultArg genus-name="message" label="message" />
+					<DefaultArg genus-name="message" label="mensagem" />
 				</BlockConnector>
 				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.ln">
 					<DefaultArg genus-name="true" label="true" />
@@ -11244,7 +11244,7 @@
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
-        <BlockGenus name="install_gy" kind="command" color="168 158 109" initlabel="bg.install_gy">
+        <BlockGenus name="install_gy" kind="command" color="0 204 0" initlabel="bg.install_gy">
 			<description>
 				<text>Install GY</text>
 			</description>
@@ -11307,7 +11307,7 @@
 				<BlockConnector connector-type="number" connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
-        <BlockGenus name="read_gy" kind="data" color="168 158 109" initlabel="bg.read_gy">
+        <BlockGenus name="read_gy" kind="data" color="0 204 0" initlabel="bg.read_gy">
 			<description>
 				<text>Read GY</text>
 			</description>
@@ -11608,7 +11608,7 @@
 ====================== OPTICS =============================
 -->
 
-		<BlockGenus name="install_tcs3200" kind="command" color="18 184 255" initlabel="bg.install_tcs3200">
+		<BlockGenus name="install_tcs3200" kind="command" color="0 204 0" initlabel="bg.install_tcs3200">
 			<description>
 				<text>Read the color sensor</text>
 			</description>
@@ -11635,7 +11635,7 @@
 				</Image>
 			</Images>
 		</BlockGenus>
-        <BlockGenus name="read_tcs3200" kind="data" color="18 184 255" initlabel="bg.read_tcs3200">
+        <BlockGenus name="read_tcs3200" kind="data" color="0 204 0" initlabel="bg.read_tcs3200">
 			<description>
 				<text>Read the color sensor</text>
 			</description>
@@ -11759,7 +11759,7 @@
 			==========================================================================
 -->
         
-		<BlockGenus name="install_dsp" kind="command" color="155 0 165" initlabel="bg.install_dsp">
+		<BlockGenus name="install_dsp" kind="command" color="0 204 0" initlabel="bg.install_dsp">
 			<description>
 				<text>Install LCD Display</text>
 			</description>
@@ -11787,7 +11787,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="print_dsp" kind="command" color="155 0 165" initlabel="bg.print_dsp">
+		<BlockGenus name="print_dsp" kind="command" color="0 204 0" initlabel="bg.print_dsp">
 			<description>
 				<text>Print text</text>
 			</description>			
@@ -11812,7 +11812,7 @@
 			</Images>
 		</BlockGenus>
 		
-		<BlockGenus name="clean_dsp" kind="command" color="155 0 165" initlabel="bg.clean_dsp">
+		<BlockGenus name="clean_dsp" kind="command" color="0 204 0" initlabel="bg.clean_dsp">
 			<description>
 				<text>Clean text</text>
 			</description>			
@@ -12383,6 +12383,10 @@
 				<BlockConnector connector-type="number" connector-kind="socket" label="LDR">
 					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
 				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Luminosidade do Sensor">
+					<DefaultArg genus-name="number" label="10" />
+				</BlockConnector>
 
             </BlockConnectors>
 			<Images>
@@ -12442,6 +12446,7 @@
                 <BlockConnector connector-type="number" connector-kind="socket" label="Furos">
 					<DefaultArg genus-name="number" label="2" />
 				</BlockConnector>
+                
 
             </BlockConnectors>
 			<Images>
@@ -12473,6 +12478,10 @@
                 <BlockConnector connector-type="number" connector-kind="socket" label="Repeticoes">
 					<DefaultArg genus-name="number" label="2" />
 				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Luminosidade do Sensor">
+					<DefaultArg genus-name="number" label="10" />
+				</BlockConnector>
 
             </BlockConnectors>
 			<Images>
@@ -12499,7 +12508,9 @@
                 
                 <BlockConnector connector-type="number" connector-kind="socket" label="Distancia (cm)">
 					<DefaultArg genus-name="number" label="30" />
-				</BlockConnector>                
+				</BlockConnector>
+                
+
 
 					
 			</BlockConnectors>
@@ -12528,6 +12539,10 @@
 				<BlockConnector connector-type="number" connector-kind="socket" label="LDR">
 					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
 				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Luminosidade do Sensor">
+					<DefaultArg genus-name="number" label="10" />
+				</BlockConnector>
 
             </BlockConnectors>
 			<Images>
@@ -12536,6 +12551,231 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+        
+                <BlockGenus name="Atto_Colisao" kind="command" color="69 135 250" initlabel="bg.Atto_Colisao">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
+					<DefaultArg genus-name="atto_d2" label="D2" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LED carrinho 1">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LDR carrinho 1">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Luminosidade do Sensor 1">
+					<DefaultArg genus-name="number" label="10" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="LED carrinho 2">
+					<DefaultArg genus-name="pinListDigital_D13" label="12" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="LDR carrinho 2">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A1" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Luminosidade do Sensor 2">
+					<DefaultArg genus-name="number" label="10" />
+				</BlockConnector>
+
+            </BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Conserv_Energ.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        
+        
+        <BlockGenus name="atto_MRU_bluetooth" kind="command" color="69 135 250" initlabel="bg.atto_MRU_bluetooth">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Motor Direita">
+					<DefaultArg genus-name="atto_d10" label="D5/10"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Motor Esquerda">
+					<DefaultArg genus-name="atto_d11" label="D6/11" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="potenciometro">
+					<DefaultArg genus-name="pinListAnalog_A0" label="A0" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Ultrassonico">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Frequencia(Hz)">
+					<DefaultArg genus-name="number" label="50" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+					<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+
+	
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/MRU.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        
+        <BlockGenus name="atto_oscilacao_bluetooth" kind="command" color="69 135 250" initlabel="bg.atto_oscilacao_bluetooth">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Zera">
+					<DefaultArg genus-name="pinListDigital_D12" label="12" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Ultrassonico">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Frequencia(Hz)">
+					<DefaultArg genus-name="number" label="100" />
+				</BlockConnector>
+
+                <BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+				<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+	
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Lei_de_hooke.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        <BlockGenus name="atto_segLeiNewton_blu" kind="command" color="69 135 250" initlabel="bg.atto_segLeiNewton_blu">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga/Desl">
+					<DefaultArg genus-name="atto_d2" label="D2" />
+				</BlockConnector>
+
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Ultrassonico">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Distancia (cm)">
+					<DefaultArg genus-name="number" label="30" />
+				</BlockConnector>
+                
+
+                <BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+				<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+                
+            </BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/segLeiNewton.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        <BlockGenus name="atto_d3/2" kind="data" color="0 0 175" initlabel="bg.atto_d3/2" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+        
+        <BlockGenus name="atto_d5/4" kind="data" color="0 0 175" initlabel="bg.atto_d5/4" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+        
+        <BlockGenus name="atto_d7/6" kind="data" color="0 0 175" initlabel="bg.atto_d7/6" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+        
+        <BlockGenus name="atto_d9/8" kind="data" color="0 0 175" initlabel="bg.atto_d9/8" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+        
+        <BlockGenus name="atto_d11/10" kind="data" color="0 0 175" initlabel="bg.atto_d11/10" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+        
+        <BlockGenus name="atto_d13/12" kind="data" color="0 0 175" initlabel="bg.atto_d13/12" editable-label="no">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"/>
+			</BlockConnectors>		
+		</BlockGenus>
+        
+        <BlockGenus name="print_phyphox" kind="command" color="245 245 245" initlabel="bg.print_phyphox">
+			<description>
+				<text>Envia dados para o Phyphox</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Dado">
+					
+				</BlockConnector>
+                <BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+				<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+        
+        <BlockGenus name="print_phyphox_duplo" kind="command" color="245 245 245" initlabel="bg.print_phyphox_duplo">
+			<description>
+				<text>Envia Dois dados para o Phyphox</text>
+			</description>
+			<BlockConnectors>
+                <BlockConnector connector-type="number" connector-kind="socket" label="Dado A">
+					
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Dado B">
+					
+				</BlockConnector>
+                <BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+				<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+        
+        
 		
 	</BlockGenuses>
 
@@ -12554,6 +12794,13 @@
 			<FamilyMember>atto_movimento_parado</FamilyMember>
             
 		</BlockFamily>
+       <!-- <BlockFamily>
+			<FamilyMember>atto_led_verde</FamilyMember>
+			<FamilyMember>atto_led_vermelho</FamilyMember>
+            <FamilyMember>atto_led_amarelo</FamilyMember>
+            
+		</BlockFamily>-->
+        
         <BlockFamily>
 			<FamilyMember>atto_d2</FamilyMember>
 			<FamilyMember>atto_d3</FamilyMember>
@@ -12562,6 +12809,16 @@
 			<FamilyMember>atto_d10</FamilyMember>
 			<FamilyMember>atto_d11</FamilyMember>
 		</BlockFamily>
+        
+        <BlockFamily>
+			<FamilyMember>atto_d13/12</FamilyMember>
+			<FamilyMember>atto_d11/10</FamilyMember>
+            <FamilyMember>atto_d9/8</FamilyMember>
+            <FamilyMember>atto_d7/6</FamilyMember>
+            <FamilyMember>atto_d5/4</FamilyMember>
+            <FamilyMember>atto_d3/2</FamilyMember>
+		</BlockFamily>
+        
 		<BlockFamily>
 			<FamilyMember>digital-high</FamilyMember>
 			<FamilyMember>digital-low</FamilyMember>
@@ -13301,9 +13558,9 @@
 				<BlockGenusMember>break</BlockGenusMember>
 				<BlockGenusMember>subroutine</BlockGenusMember>
 				<BlockGenusMember>subroutine-ref</BlockGenusMember>
-				<BlockGenusMember>subroutine_var</BlockGenusMember>
+				<!--<BlockGenusMember>subroutine_var</BlockGenusMember>
 				<BlockGenusMember>subroutine-ref_var</BlockGenusMember>
-				<BlockGenusMember>ref_var</BlockGenusMember>
+				<BlockGenusMember>ref_var</BlockGenusMember> -->
 			</BlockDrawer>
 			<BlockDrawer button-color="0 0 180" name="bd.pins" type="factory">
 				<BlockGenusMember>pin-write-digital</BlockGenusMember>
@@ -13313,7 +13570,7 @@
 				<BlockGenusMember>pin-read-analog</BlockGenusMember>
 				<BlockGenusMember>pin-write-analog</BlockGenusMember>
 				<BlockGenusMember>tone</BlockGenusMember>
-				<BlockGenusMember>tone_time</BlockGenusMember>
+				<!--<BlockGenusMember>tone_time</BlockGenusMember>-->
 				<BlockGenusMember>no_tone</BlockGenusMember>
 				<BlockGenusMember>pinListDigital_D0</BlockGenusMember>
 				<BlockGenusMember>pinListAnalog_A0</BlockGenusMember>
@@ -13335,8 +13592,8 @@
 				<BlockGenusMember>and</BlockGenusMember>
 				<BlockGenusMember>or</BlockGenusMember>
 				<BlockGenusMember>not</BlockGenusMember>
-				<BlockGenusMember>string_equal</BlockGenusMember>
-				<BlockGenusMember>string_empty</BlockGenusMember>
+				<!--<BlockGenusMember>string_equal</BlockGenusMember>-->
+				<!--<BlockGenusMember>string_empty</BlockGenusMember>-->
 				<BlockGenusMember>string_toInt</BlockGenusMember>
 			</BlockDrawer>
 			<BlockDrawer button-color="0 155 55" name="bd.operators" type="factory">
@@ -13361,22 +13618,23 @@
 			</BlockDrawer>
 			<BlockDrawer button-color="249 37 56" name="bd.number" type="factory">
 				<BlockGenusMember>number</BlockGenusMember>
-				<BlockGenusMember>setter_variable_number</BlockGenusMember>
 				<BlockGenusMember>variable_number</BlockGenusMember>
-				<BlockGenusMember>setter_variable_number_unsigned_long</BlockGenusMember>
-				<BlockGenusMember>variable_number_unsigned_long</BlockGenusMember>
+                <BlockGenusMember>setter_variable_number</BlockGenusMember>
+				<BlockGenusMember>number_long</BlockGenusMember>
+                <BlockGenusMember>variable_number_unsigned_long</BlockGenusMember>
+                <BlockGenusMember>setter_variable_number_unsigned_long</BlockGenusMember>
+                <BlockGenusMember>number_double</BlockGenusMember>
+                <BlockGenusMember>variable_number_double</BlockGenusMember>
+                <BlockGenusMember>setter_variable_number_double</BlockGenusMember>
 				<BlockGenusMember>setter_variable_digital</BlockGenusMember>
 				<BlockGenusMember>variable_digital</BlockGenusMember>
 				<BlockGenusMember>digital-low</BlockGenusMember>
 				<BlockGenusMember>digital-high</BlockGenusMember>
 				<BlockGenusMember>true</BlockGenusMember>
 				<BlockGenusMember>false</BlockGenusMember>
-				<BlockGenusMember>setter_variable_number_double</BlockGenusMember>
-				<BlockGenusMember>variable_number_double</BlockGenusMember>
-				<BlockGenusMember>number_double</BlockGenusMember>
-				<BlockGenusMember>pinListDigital_D0</BlockGenusMember>
+				<!--<BlockGenusMember>pinListDigital_D0</BlockGenusMember>
 				<BlockGenusMember>pinListAnalog_A0</BlockGenusMember>
-				<BlockGenusMember>pinListAnalogWrite_D3</BlockGenusMember>
+				<BlockGenusMember>pinListAnalogWrite_D3</BlockGenusMember>-->
 				<BlockGenusMember>setter_variable_char</BlockGenusMember>
 				<BlockGenusMember>variable_poly</BlockGenusMember>
 				<BlockGenusMember>char</BlockGenusMember>
@@ -13400,21 +13658,21 @@
 				<BlockGenusMember>df_buzzer_tone_delay</BlockGenusMember>
 			</BlockDrawer>-->
 			<BlockDrawer button-color="255 255 255" name="bd.communication" type="factory">
-				<BlockGenusMember>serial_write</BlockGenusMember>
+				<!--<BlockGenusMember>serial_write</BlockGenusMember>-->
 				<BlockGenusMember>serial_print</BlockGenusMember>
 				<BlockGenusMember>glue_sn</BlockGenusMember>
 				<BlockGenusMember>glue_sb</BlockGenusMember>
 				<BlockGenusMember>glue_poly</BlockGenusMember>
-				<BlockGenusMember>ir_setport</BlockGenusMember>
+				<!--<BlockGenusMember>ir_setport</BlockGenusMember>
 				<BlockGenusMember>ir_getcode</BlockGenusMember>
 				<BlockGenusMember>wire_write</BlockGenusMember>
 				<BlockGenusMember>wire_read</BlockGenusMember>
-				<BlockGenusMember>wire_isread</BlockGenusMember>
+				<BlockGenusMember>wire_isread</BlockGenusMember>-->
 				<BlockGenusMember>serial_available</BlockGenusMember>
 				<BlockGenusMember>serial_available2</BlockGenusMember>
 				<BlockGenusMember>serial_read</BlockGenusMember>
 				<BlockGenusMember>serial_parseInt</BlockGenusMember>
-				<BlockGenusMember>DuinoEDU_Guino_Read</BlockGenusMember>
+				<!--<BlockGenusMember>DuinoEDU_Guino_Read</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_Guino_Slider</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_Guino_switch</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_Guino_pause</BlockGenusMember>
@@ -13426,7 +13684,7 @@
 				<BlockGenusMember>Serialplus_send_variable_number</BlockGenusMember>
 				<BlockGenusMember>Serialplus_send_variable_digital</BlockGenusMember>
 				<BlockGenusMember>Serialplus_receive_number</BlockGenusMember>
-				<BlockGenusMember>Serialplus_receive_digital</BlockGenusMember>
+				<BlockGenusMember>Serialplus_receive_digital</BlockGenusMember>-->
 			</BlockDrawer>
 <!--
 			<BlockDrawer button-color="26 97 218" name="bd.scoop">
@@ -13448,12 +13706,12 @@
 				<BlockGenusMember>eeprom_write_long</BlockGenusMember>
 				<BlockGenusMember>eeprom_read</BlockGenusMember>
 				<BlockGenusMember>eeprom_write</BlockGenusMember>
-				<BlockGenusMember>sd_write2</BlockGenusMember>
+				<!--<BlockGenusMember>sd_write2</BlockGenusMember>
 				<BlockGenusMember>MaSD_Connect</BlockGenusMember>
 				<BlockGenusMember>MaSD_file</BlockGenusMember>
 				<BlockGenusMember>MaSD_Write</BlockGenusMember>
 				<BlockGenusMember>MaSD_NewLine</BlockGenusMember>
-				<BlockGenusMember>MaSD_separator</BlockGenusMember>
+				<BlockGenusMember>MaSD_separator</BlockGenusMember>-->
 				<!-- <BlockGenusMember>sd_write</BlockGenusMember> -->
 				<!-- <BlockGenusMember>sd_write_number</BlockGenusMember> -->
 				<!-- <BlockGenusMember>sd_write_number_int</BlockGenusMember> -->
@@ -13466,16 +13724,16 @@
 				<BlockGenusMember>bleshield_compare</BlockGenusMember>
 			</BlockDrawer>
 -->
-			<!-- <BlockDrawer button-color="120 120 120" name="bd.especial" type="factory"> 
+			<BlockDrawer button-color="120 120 120" name="bd.especial" type="factory"> 
 
 				<BlockGenusMember>code_head</BlockGenusMember>
 				<BlockGenusMember>code_setup</BlockGenusMember>
 				<BlockGenusMember>code_loop</BlockGenusMember>
 
-				<BlockGenusMember>DuinoEDU_code_head</BlockGenusMember>
+			<!--	<BlockGenusMember>DuinoEDU_code_head</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_code_setup</BlockGenusMember>
-				<BlockGenusMember>DuinoEDU_code_loop</BlockGenusMember>
-			</BlockDrawer> -->
+				<BlockGenusMember>DuinoEDU_code_loop</BlockGenusMember>-->
+			</BlockDrawer> 
 			<!--
 			<BlockDrawer button-color="13 152 164" name="bd.tinkerkit" type="factory">
 				<BlockGenusMember>Tinker_LED</BlockGenusMember>
@@ -13972,13 +14230,7 @@
 			==========================================================================
 -->
 			<BlockDrawer button-color="255 255 0" name="bd.atto" type="factory">
-                <!--<BlockGenusMember>install_dsp</BlockGenusMember>
-                <BlockGenusMember>print_dsp</BlockGenusMember>
-                <BlockGenusMember>clean_dsp</BlockGenusMember>
-                <BlockGenusMember>install_gy</BlockGenusMember>
-                <BlockGenusMember>read_gy</BlockGenusMember>
-                <BlockGenusMember>install_tcs3200</BlockGenusMember>
-				<BlockGenusMember>read_tcs3200</BlockGenusMember>-->
+                
 				<BlockGenusMember>atto_push_buttonn</BlockGenusMember>
 				<BlockGenusMember>atto_led_verde</BlockGenusMember>
 				<BlockGenusMember>atto_led_vermelho</BlockGenusMember>
@@ -14009,13 +14261,32 @@
 					<BlockGenusMember>atto_Hooke</BlockGenusMember>
                     <BlockGenusMember>Atto_Tempo</BlockGenusMember>
                  <!--<BlockGenusMember>Atto_Tempo_2_Furos</BlockGenusMember>--> 
-                <BlockGenusMember>Atto_Tempo_Varios_Furos</BlockGenusMember>
+               <!-- <BlockGenusMember>Atto_Tempo_Varios_Furos</BlockGenusMember>-->
                 <BlockGenusMember>Atto_Pendulo</BlockGenusMember>
                 <BlockGenusMember>Atto_Conserv_Energ</BlockGenusMember>
                 <BlockGenusMember>atto_segLeiNewton</BlockGenusMember>
+            <!--    <BlockGenusMember>Atto_Colisao</BlockGenusMember>-->
                 
-                
-			</BlockDrawer>
+            </BlockDrawer>
+            
+            <BlockDrawer button-color="69 135 250" name="bd.Atto_fisica_bluetooth" type="factory">
+					<!--<BlockGenusMember>atto_motor_m1_fisica</BlockGenusMember>-->
+					<BlockGenusMember>atto_MRU_bluetooth</BlockGenusMember>
+                <BlockGenusMember>atto_oscilacao_bluetooth</BlockGenusMember>
+				<BlockGenusMember>atto_segLeiNewton_blu</BlockGenusMember>
+                <BlockGenusMember>print_phyphox</BlockGenusMember>
+                <BlockGenusMember>print_phyphox_duplo</BlockGenusMember>
+            </BlockDrawer>
+            
+            <BlockDrawer button-color="0 204 0" name="bd.Atto_Suporte" type="factory">
+                <BlockGenusMember>install_dsp</BlockGenusMember>
+                <BlockGenusMember>print_dsp</BlockGenusMember>
+                <BlockGenusMember>clean_dsp</BlockGenusMember>
+                <BlockGenusMember>install_gy</BlockGenusMember>
+                <BlockGenusMember>read_gy</BlockGenusMember>
+                <BlockGenusMember>install_tcs3200</BlockGenusMember>
+				<BlockGenusMember>read_tcs3200</BlockGenusMember>
+            </BlockDrawer>
 			
             
 			
