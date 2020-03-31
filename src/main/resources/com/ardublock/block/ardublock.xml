@@ -14257,26 +14257,27 @@
 
 			<BlockDrawer button-color="69 135 250" name="bd.Atto_fisica" type="factory">
 					<!--<BlockGenusMember>atto_motor_m1_fisica</BlockGenusMember>-->
-					<BlockGenusMember>atto_MRU</BlockGenusMember>
+					<!--<BlockGenusMember>atto_MRU</BlockGenusMember>-->
 					<BlockGenusMember>atto_Hooke</BlockGenusMember>
-                    <BlockGenusMember>Atto_Tempo</BlockGenusMember>
+                  <!--  <BlockGenusMember>Atto_Tempo</BlockGenusMember>-->
                  <!--<BlockGenusMember>Atto_Tempo_2_Furos</BlockGenusMember>--> 
                <!-- <BlockGenusMember>Atto_Tempo_Varios_Furos</BlockGenusMember>-->
-                <BlockGenusMember>Atto_Pendulo</BlockGenusMember>
+               <!-- <BlockGenusMember>Atto_Pendulo</BlockGenusMember>-->
                 <BlockGenusMember>Atto_Conserv_Energ</BlockGenusMember>
-                <BlockGenusMember>atto_segLeiNewton</BlockGenusMember>
+               <!-- <BlockGenusMember>atto_segLeiNewton</BlockGenusMember>-->
             <!--    <BlockGenusMember>Atto_Colisao</BlockGenusMember>-->
-                
-            </BlockDrawer>
-            
-            <BlockDrawer button-color="69 135 250" name="bd.Atto_fisica_bluetooth" type="factory">
-					<!--<BlockGenusMember>atto_motor_m1_fisica</BlockGenusMember>-->
-					<BlockGenusMember>atto_MRU_bluetooth</BlockGenusMember>
+                <BlockGenusMember>atto_MRU_bluetooth</BlockGenusMember>
                 <BlockGenusMember>atto_oscilacao_bluetooth</BlockGenusMember>
 				<BlockGenusMember>atto_segLeiNewton_blu</BlockGenusMember>
                 <BlockGenusMember>print_phyphox</BlockGenusMember>
                 <BlockGenusMember>print_phyphox_duplo</BlockGenusMember>
+                
             </BlockDrawer>
+            
+            <!--<BlockDrawer button-color="69 135 250" name="bd.Atto_fisica_bluetooth" type="factory">-->
+					<!--<BlockGenusMember>atto_motor_m1_fisica</BlockGenusMember>-->
+					
+                <!--</BlockDrawer>-->   
             
             <BlockDrawer button-color="0 204 0" name="bd.Atto_Suporte" type="factory">
                 <BlockGenusMember>install_dsp</BlockGenusMember>
