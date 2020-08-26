@@ -52,7 +52,7 @@ public class Atto_Hooke extends TranslatorBlock
 			translator.addDefinitionCommand(variaveis_globais);
 			translator.addDefinitionCommand(vetor_ultrassonic);
 			translator.addDefinitionCommand(vetor_ultrassonic_2);
-			translator.addSetupCommand("Serial.begin(9600);\n");
+			translator.addSetupCommand("Serial.begin(9600);\n Serial.println(\"Pressione o Botão Zerar\");\n ";
 		if(ultrassonic_block.toCode().equals(ultra_block) == ultrassonic_block.toCode().equals("9")){
 			String lei_hooke = "if (__ardublockDigitalReadHooke("+botao_zera+"))\n {\n  _ABVAR_1_Zerado = ardublockUltrasonicMesure( 8 , "+ultra_block+" , 0 )  ;\n Serial.print(\"Ajustado\");\n Serial.print(\" \"); \n Serial.print(( _ABVAR_1_Zerado - _ABVAR_1_Zerado ));\n Serial.print(\" \");\n  Serial.println();\n delay("+delay_string+");\n }\n if (__ardublockDigitalReadHooke("+botao_liga+")) \n{\n  _ABVAR_2_Double = ( _ABVAR_1_Zerado - ardublockUltrasonicMesure( 8 , "+ultra_block+" , 0 )  ) ; \nSerial.print(_ABVAR_2_Double);\nSerial.print(\"\");\nSerial.print(\"cm\");\nSerial.print(\"\");\nSerial.println(\"\");\n delay( "+delay_string+" );\n}\n";
 			return codePrefix + lei_hooke + codeSuffix;	

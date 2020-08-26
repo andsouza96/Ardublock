@@ -12321,7 +12321,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 		
-		<BlockGenus name="atto_movimento_parado_fisica" kind="data" color="255 70 50" initlabel="bg.atto_movimento_parado_fisica" editable-label="no">
+		<BlockGenus name="atto_movimento_parado_fisica" kind="data" color="255 70 50" initlabel="bg.atto_movimento_parado_fisica" editable-label="no">    
 			<description>
 				<text>
 					'Double' constant
@@ -12775,7 +12775,95 @@
 			</BlockConnectors>
 		</BlockGenus>
         
+        <BlockGenus name="atto_oscilacao_forca_bluetooth" kind="command" color="69 135 250" initlabel="bg.atto_oscilacao_forca_bluetooth">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+				<DefaultArg genus-name="atto_d9/8" label="D9/8" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Sensor Forca">
+				<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+	
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Osci_Forca.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
         
+        
+        <BlockGenus name="atto_forca_bluetooth" kind="command" color="69 135 250" initlabel="bg.atto_forca_bluetooth">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+				<DefaultArg genus-name="atto_d9/8" label="D9/8" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Sensor Forca">
+				<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+	
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Forc_Ang.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+        
+        <BlockGenus name="atto_atrito_bluetooth" kind="command" color="69 135 250" initlabel="bg.atto_atrito_bluetooth">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				
+				<BlockConnector connector-type="number" connector-kind="socket" label="Botao Liga">
+					<DefaultArg genus-name="pinListDigital_D13" label="13" />
+				</BlockConnector>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="Bluetooth">
+				<DefaultArg genus-name="atto_d9/8" label="D9/8" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Sensor Forca">
+				<DefaultArg genus-name="atto_d3/2" label="D3/2" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Motor Direita">
+					<DefaultArg genus-name="atto_d10" label="D5/10"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="Motor Esquerda">
+					<DefaultArg genus-name="atto_d11" label="D6/11" />
+				</BlockConnector>
+                
+                <BlockConnector connector-type="number" connector-kind="socket" label="Velocidade">
+					<DefaultArg genus-name="number" label="160" />
+				</BlockConnector>
+	
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/Atto/Atto_Atrito.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
 	</BlockGenuses>
 
@@ -14269,8 +14357,14 @@
                 <BlockGenusMember>atto_MRU_bluetooth</BlockGenusMember>
                 <BlockGenusMember>atto_oscilacao_bluetooth</BlockGenusMember>
 				<BlockGenusMember>atto_segLeiNewton_blu</BlockGenusMember>
+                <BlockGenusMember>atto_oscilacao_forca_bluetooth</BlockGenusMember>
+                 <BlockGenusMember>atto_forca_bluetooth</BlockGenusMember>
+                <BlockGenusMember>atto_atrito_bluetooth</BlockGenusMember>
+                
                 <BlockGenusMember>print_phyphox</BlockGenusMember>
                 <BlockGenusMember>print_phyphox_duplo</BlockGenusMember>
+                
+                
                 
             </BlockDrawer>
             
